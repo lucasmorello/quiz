@@ -28,8 +28,8 @@
 
 		<hr>
 
-		<p ng-show="!shared" class="advice text-center"><b>Compartilhe seu resultado e ganhe 20% de desconto em qualquer curso da Resultados Digitais:</b></p>
-		<p ng-show="shared" class="advice text-center"><b>Acesse <a href="http://cursos.resultadosdigitais.com.br/" target="_blank">cursos.resultadosdigitais.com.br</a> e use o cupom QUIZRD20 para ter 20% de desconto na compra de qualquer curso.</b></p>
+		<p ng-show="!shared" class="advice text-center"><b>Compartilhe seu resultado</b></p>
+		<p ng-show="shared" class="advice text-center"><b>Acesse <a href="http://" target="_blank">cursos.resultadosdigitais.com.br</a> e use o cupom QUIZRD20 para ter 20% de desconto na compra de qualquer curso.</b></p>
 
 		<p class="text-center">
 			<button ng-click="shareFacebook()" class="btn btn-default btn-lg"><i class="fa fa-facebook"></i> Facebook</button>
@@ -51,15 +51,14 @@
 					</ul>
 				</li>
 			</ul>
-			<button ng-click="emailLinks()" class="btn btn-default btn-lg"> Enviar links para email</button>
 		</div>
 	</div>
 </section>
 
 <section class="intro col-md-8 col-md-offset-2" ng-show="!inProgress">
 	<img alt="Quiz" src="images/quiz.png" class="img-responsive hidden-xs">
-	<h2>Quiz do Marketing Digital</h2>
-	<h3>Bem vindo ao Quiz de Marketing Digital!</h3>
+	<h2>Quiz</h2>
+	<h3>Bem vindo ao Quiz!</h3>
 	<input type="text" class="form-control input-lg" ng-model="name" placeholder="Nome">
 	<input type="email" class="form-control input-lg" ng-model="email" placeholder="Email">
 	<p class="text-center">

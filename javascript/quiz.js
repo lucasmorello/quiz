@@ -39,7 +39,7 @@ app.directive('quiz', function(questions, levels) {
 				var data_array = {
 					nome: 					 scope.name,
 					email: 					 scope.email,
-					identificador: 	 'iniciou-quiz-do-mkt-digital',
+					identificador: 	 'iniciou-quiz',
 					token_rdstation: 'TOKEN-RDSTATION'
 				};
 
@@ -94,7 +94,7 @@ app.directive('quiz', function(questions, levels) {
 						nivel:           scope.level.title,
 						fracos:          scope.weak_categories.toString(),
 						fortes:          scope.strong_categories.toString(),
-						identificador: 	 'finalizou-quiz-do-mkt-digital',
+						identificador: 	 'finalizou-quiz',
 						token_rdstation: 'TOKEN-RDSTATION'
 					};
 
@@ -146,7 +146,7 @@ app.directive('quiz', function(questions, levels) {
 					nome: 					 scope.name,
 					email: 					 scope.email,
 					network_name:    network_name,
-					identificador: 	 'compartilhou-quiz-do-mkt-digital',
+					identificador: 	 'compartilhou-quiz',
 					token_rdstation: 'TOKEN-RDSTATION'
 				};
 
@@ -158,10 +158,10 @@ app.directive('quiz', function(questions, levels) {
 
 				FB.ui({
 				  method: 'feed',
-				  link: 'http://quizdomarketingdigital.com.br?utm_medium=referral&utm_campaign=quiz-do-marketing-digital&utm_source=fb-share',
+				  link: 'http://',
 					name: scope.social_text,
-					description: "Marketing Digital permeia vários canais e ferramentas e tudo está em constante mudança. Quer testar seus conhecimentos? Faça o Quiz do Marketing Digital!",
-					picture: "http://quizdomarketingdigital.com.br/" + scope.level.image
+					description: "",
+					picture: "http://" + scope.level.image
 
 				}, function(response){
 				});
@@ -170,7 +170,7 @@ app.directive('quiz', function(questions, levels) {
 			scope.shareTwitter = function(){
 				scope.socialConversion("Twitter");
 
-				scope.social_text += " http://bit.ly/quiz-mktdigital. via @ResDigitais.";
+				scope.social_text += " http:// via @";
 
 				var url = "https://twitter.com/intent/tweet?text=" + scope.social_text;
 
@@ -182,8 +182,8 @@ app.directive('quiz', function(questions, levels) {
 
 				var url = "https://www.linkedin.com/shareArticle?mini=true";
 
-				url += "&url=http://quizdomarketingdigital.com.br?utm_medium=referral&utm_campaign=quiz-do-marketing-digital&utm_source=in-share";
-				url += "&title=Quiz do Marketing Digital";
+				url += "&url=http://";
+				url += "&title=Quiz";
 				url += "&summary=" + scope.social_text;
 
 				window.open(url, "_blank");
